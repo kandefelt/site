@@ -55,14 +55,15 @@ h3 {
 
 .top-poster {
   position: absolute;
-  right: 280px;
-  top: 70px;
+  width: 15%;
+  right: 20%;
+  top: 40px;
 }
 
 .bottom-poster {
   position: absolute;
   width: 10%;
-  left: 300px;
+  left: 20%;
   bottom: 400px;
 }
 

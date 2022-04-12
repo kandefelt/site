@@ -104,6 +104,10 @@ h3 {
   float: right;
   margin-left: 30px;
 }
+.copyright {
+  width: 50%;
+  margin: 0 auto 0;
+}
 
 /*----- Button--------*/
 .wrap {

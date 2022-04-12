@@ -69,6 +69,7 @@ h3 {
 
 .profile {
   display: block;
+  width: 50%;
   margin: 0 auto 100px;
 }
 
@@ -79,6 +80,7 @@ h3 {
 
 .contact-me {
   display: block;
+  width: 50%;
   margin: 100px auto 100px;
 }
 
@@ -88,7 +90,7 @@ h3 {
 }
 
 .profile-img {
-  width: 15%;
+  width: 25%;
 }
 
 .skill1-img {

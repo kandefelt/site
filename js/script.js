@@ -23,8 +23,9 @@ for (var i = 0; i < pathEls.length; i++) {
 var myCloudRadius = 300;
 if(window.innerWidth<window.innerHeight)
 {
-  myCloudRadius = 150;
+  myCloudRadius = 140;
   document.querySelector("hr").setAttribute('style','font-size:2rem !important;');
+  document.querySelector(".home-heading").setAttribute('style','font-size:2.5rem !important;');
 }
 
 const mySkills = [

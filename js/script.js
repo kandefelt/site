@@ -20,7 +20,12 @@ for (var i = 0; i < pathEls.length; i++) {
 
 
 // ------------Skill cloud----------
-
+var myCloudRadius = 300;
+if(window.innerWidth<window.innerHeight)
+{
+  myCloudRadius = 200;
+  document.querySelector("hr").setAttribute('style','font-size:2.5rem !important;');
+}
 
 const mySkills = [
     'JavaScript', 'CSS', 'HTML',
@@ -29,11 +34,7 @@ const mySkills = [
     'C#', 'Selenium 2', 'Flask',
     'SQL', 'MySQL', 'Unity','Testrail',
 ];
-var myCloudRadius = 300;
-if(window.innerWidth<700)
-{
-  myCloudRadius = 200;
-}
+
 var tagCloud = TagCloud('.skill-cloud', mySkills,{
 
   // radius in px

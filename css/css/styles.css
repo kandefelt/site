@@ -1,0 +1,949 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700');
+
+html,
+body {
+  height: 100%;
+  margin: 0 30px 0 ;
+  text-align: left;
+  color: # ;
+  background-color: #111 !important;
+  font-family: 'Fira Mono', monospace  !important;
+  font-size: 14px;
+}
+
+hr {
+  border:none !important;
+  font-family: 'Ubuntu Mono', sans-serif;
+  margin: 50px auto 100px !important;
+  text-align:center !important;
+  font-size:3rem;
+  white-space:nowrap;
+}
+hr:before {
+  content:'/*--About Me--*/';
+  color:#FFD93D;
+
+}
+h1, h2 ,h3, h4{
+font-family: 'Ubuntu Mono', sans-serif;
+}
+h1, h2 ,h3, h4, p{
+  color: #FFD93D !important;
+}
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: #8d8d8d;
+  -webkit-box-shadow: 0 0 0px 1000px #2b2b2b inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  -o-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s
+}
+
+ .section-headings span{
+  font-size: 3.5rem;
+}
+.no-break{
+  white-space:nowrap;
+}
+/* Nav */
+
+.nav-link {
+  color: #FFD93D !important;
+  text-decoration: none;
+  margin-left: 40px!important;
+  line-height: 30px;
+  font-size: 1.5rem !important;
+}
+
+
+.navbar-dark .navbar-toggler-icon {
+     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 217, 61,1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* First section */
+
+.top-container{
+    padding: 7% 3% 0;
+}
+.footer-container{
+  text-align: center;
+}
+
+
+/* Profile section */
+
+.profile {
+  padding: 10% 10% 5%;
+}
+.profile-img {
+  width: 85%;
+  border-radius: 100%;
+  margin-top: 20%;
+}
+
+/* Skills section */
+
+.skills {
+  display: block;
+  padding: 10% 3% 5%;
+}
+
+.skill {
+  margin: 10% auto 10%;
+}
+
+.skill1-img {
+  width: 10%;
+  float: left;
+  margin-right: 30px;
+}
+
+.skill2-img {
+  width: 10%;
+  float: left;
+  margin-right: 30px;
+  filter: invert(42%) sepia(99%) saturate(602%) hue-rotate(151deg) brightness(93%) contrast(102%);
+}
+
+/* Contact section */
+
+
+.contact-me {
+  display: block;
+  padding: 5% 3% 5%;
+}
+
+.contact-img {
+  width: 95%;
+}
+
+.copyright {
+  width: 50%;
+  margin: 0 auto 0;
+}
+/* Style all font awesome icons */
+
+.fa {
+  padding: 10px;
+  font-size: 15px;
+  width: 35px;
+  height:35px;
+  text-align: center !important;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+/* Contact Form credit Colorlib */
+
+
+ul, li {
+	margin: 0px;
+	list-style-type: none;
+}
+
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input::-webkit-input-placeholder { color: #FFD93D;}
+input:-moz-placeholder { color: #FFD93D;}
+input::-moz-placeholder { color: #FFD93D;}
+input:-ms-input-placeholder { color: #FFD93D;}
+
+textarea::-webkit-input-placeholder { color: #FFD93D;}
+textarea:-moz-placeholder { color: #FFD93D;}
+textarea::-moz-placeholder { color: #FFD93D;}
+textarea:-ms-input-placeholder { color: #FFD93D;}
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+
+
+
+/*==================================================================
+[ Form ]*/
+
+.contact100-form {
+  width: 100%;
+}
+
+
+
+/*------------------------------------------------------------------
+[ Input ]*/
+
+.wrap-input100 {
+  width: 100%;
+  background-color: #2b2b2b;
+  border-radius: 31px;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.input100 {
+  position: relative;
+  display: block;
+  width: 100%;
+  background: #2b2b2b;
+  border-radius: 31px;
+  font-family: Ubuntu-Bold;
+  font-size: 18px;
+  color: #FFD93D;
+  line-height: 1.2;
+  z-index: 2;
+}
+
+
+/*---------------------------------------------*/
+input.input100 {
+  height: 62px;
+  padding: 0 35px 0 35px;
+}
+
+
+textarea.input100 {
+  min-height: 169px;
+  padding: 19px 35px 0 35px;
+}
+
+
+
+/*------------------------------------------------------------------
+[ Focus Input ]*/
+
+.focus-input100 {
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #2b2b2b;
+  pointer-events: none;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+
+.input100:focus + .focus-input100 {
+  width: calc(100% + 20px);
+  height: calc(100% + 3px);
+  border-bottom: 3px solid #FFD93D;
+}
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 150px;
+  height: 62px;
+  background-color: transparent;
+  border-radius: 31px;
+
+  font-size: 24px;
+  font-weight: bold;
+  color: #2b2b2b;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 1;
+}
+
+.contact100-form-btn::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-radius: 31px;
+  background-color: #FFD93D;
+  pointer-events: none;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn:hover:before {
+  background-color: #806e22;
+  width: calc(100% + 20px);
+}
+
+
+
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+.alert-validate::before {
+  content: attr(data-validate);
+  position: absolute;
+  z-index: 1000;
+  max-width: 70%;
+  background-color: #2b2b2b;
+  border: 1px solid #c80000;
+  border-radius: 14px;
+  padding: 4px 25px 4px 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10px;
+  pointer-events: none;
+
+  font-family: Ubuntu-Bold;
+  color: #c80000;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.alert-validate::after {
+  content: "\f06a";
+  font-family: FontAwesome;
+  display: block;
+  position: absolute;
+  z-index: 1100;
+  color: #c80000;
+  font-size: 16px;
+  font-weight: 900;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 16px;
+}
+
+.alert-validate:hover:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .alert-validate::before {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+
+/*----------Brand Glitch credit Piotr Galor--------*/
+
+
+
+.navbar .navbar-brand{
+  animation: glitch 1s linear infinite;
+  font-size: 2.5rem !important;
+  color: #FFD93D;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.navbar .navbar-brand:hover{
+  color: #FFFF00;
+}
+
+@keyframes glitch{
+  2%,64%{
+    transform: translate(2px,0) skew(0deg);
+  }
+  4%,60%{
+    transform: translate(-2px,0) skew(0deg);
+  }
+  62%{
+    transform: translate(0,0) skew(5deg);
+  }
+}
+
+.navbar .navbar-brand:before,
+.navbar .navbar-brand:after{
+  content: attr(title);
+  position: absolute;
+  left: 0;
+}
+
+.navbar .navbar-brand:before{
+  animation: glitchTop 1s linear infinite;
+  clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  -webkit-clip-path: polygon(0 0, 100% 0, 0 33%, 100% 33%);
+}
+
+@keyframes glitchTop{
+  2%,64%{
+    transform: translate(2px,-2px);
+  }
+  4%,60%{
+    transform: translate(-2px,2px);
+  }
+  62%{
+    transform: translate(13px,-1px) skew(-13deg);
+  }
+}
+
+.navbar .navbar-brand:after{
+  animation: glitchBottom 1.5s linear infinite;
+  clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  -webkit-clip-path: polygon(0 67%, 100% 67%, 0 100%);
+}
+
+@keyframes glitchBottom{
+  2%,64%{
+    transform: translate(-2px,0);
+  }
+  4%,60%{
+    transform: translate(-2px,0);
+  }
+  62%{
+    transform: translate(-22px,5px) skew(21deg);
+  }
+}
+
+
+/* --------- Heading lighting credit  Prathamesh Koshti -------*/
+
+
+.home-heading, .home-sub-heading {
+  margin: 0;
+  font-weight: bold;
+  color: #FFD93D;
+  justify-content: left;
+  align-items: left;
+  font-family: 'Fira Mono', monospace  !important;
+}
+.home-heading {
+  font-size: 3rem;
+	opacity: 0.15;
+}
+.home-sub-heading {
+  opacity: 0.75;
+  letter-spacing:0.5rem;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+.sub-headings{
+  padding-top: 7%;
+}
+.flicker-origin {
+	opacity: 1;
+	animation: flickerOrigin 2s linear  reverse infinite;
+}
+.flicker-origin::after {
+	content: '';
+	width: 100%;
+	-webkit-box-shadow: -0px  0px 60px 50px rgba(255, 217, 61,1);
+	-moz-box-shadow: -0px 0px 60px 50px rgba(255, 217, 61,1);
+	box-shadow: -15px 0px 60px 8px rgba(255, 217, 61,1);
+}
+.flicker-one-step {
+	animation: flickerOneDist 2s linear reverse infinite;
+	position: relative;
+}
+.flicker-one-step::after,
+.flicker-one-step::before  {
+	content:' ';
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: -50%;
+	left: 100%;
+	border-radius: 100%;
+	opacity: 0.05;
+	filter: blur(10px);
+}
+.flicker-one-step::after {
+	width: 200px;
+	height: 200px;
+	top: -150%;
+	left: -5%;
+	opacity: 0.1;
+	filter: blur(10px);
+}
+.flicker-two-step {
+	animation: flickerTwoDist 2s linear reverse infinite
+}
+
+.flicker-three-step {
+	animation: flickerThreeDist 2s linear reverse infinite
+}
+
+@keyframes flickerOrigin {
+	0% {
+		opacity: 0.4;
+	}
+	5% {
+		opacity: 0.5;
+	}
+	10% {
+		opacity: 0.6;
+	}
+	15% {
+		opacity: 0.85;
+	}
+	25% {
+		opacity: 0.5;
+	}
+	30% {
+		opacity: 1;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.5;
+	}
+	60% {
+		opacity: 1;
+	}
+	70% {
+		opacity: 0.85;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes flickerOneDist {
+	0% {
+		opacity: 0.19;
+	}
+	5% {
+		opacity: 0.2;
+	}
+	10% {
+		opacity: 0.25;
+	}
+	15% {
+		opacity: 0.35;
+	}
+	25% {
+		opacity: 0.2;
+	}
+	30% {
+		opacity: 0.4;
+	}
+	35% {
+		opacity: 0.1;
+	}
+	40% {
+		opacity: 0.25;
+	}
+	45% {
+		opacity: 0.2;
+	}
+	60% {
+		opacity: 0.4;
+	}
+	70% {
+		opacity: 0.35;
+	}
+	80% {
+		opacity: 0.4;
+	}
+	90% {
+		opacity: 0.2;
+	}
+	100% {
+		opacity: 0.4;
+	}
+}
+
+@keyframes flickerTwoDist {
+  0% {
+		opacity: 0.1;
+	}
+	5% {
+		opacity: 0.1;
+	}
+	10% {
+		opacity: 0.125;
+	}
+	15% {
+		opacity: 0.175;
+	}
+	25% {
+		opacity: 0.1;
+	}
+	30% {
+		opacity: 0.2;
+	}
+	35% {
+		opacity: 0.05;
+	}
+	40% {
+		opacity: 0.125;
+	}
+	45% {
+		opacity: 0.1;
+	}
+	60% {
+		opacity: 0.2;
+	}
+	70% {
+		opacity: 0.175;
+	}
+	80% {
+		opacity: 0.2;
+	}
+	90% {
+		opacity: 0.1;
+	}
+	100% {
+		opacity: 0.2;
+	}
+}
+
+@keyframes flickerThreeDist {
+  0% {
+		opacity: 0.05;
+	}
+	5% {
+		opacity: 0.05;
+	}
+	10% {
+		opacity: 0.06;
+	}
+	15% {
+		opacity: 0.09;
+	}
+	25% {
+		opacity: 0.05;
+	}
+	30% {
+		opacity: 0.1;
+	}
+	35% {
+		opacity: 0.025;
+	}
+	40% {
+		opacity: 0.06;
+	}
+	45% {
+		opacity: 0.05;
+	}
+	60% {
+		opacity: 0.1;
+	}
+	70% {
+		opacity: 0.09;
+	}
+	80% {
+		opacity: 0.1;
+	}
+	90% {
+		opacity: 0.05;
+	}
+	100% {
+		opacity: 0.1;
+	}
+}
+
+
+
+
+/*----- anim credit anime.js-------*/
+.anim, .anim svg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0 10% 7%;
+}
+.anim path {
+  stroke-width: 6;
+}
+
+
+
+
+/* --------Contact Me / Skills header animation----------- */
+.animate {
+	font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.animate span {
+	display: inline-block;
+}
+
+
+.flash-anim span {
+	color: #FFD93D;
+	opacity: 0;
+	transform: translate(-300px, 0) scale(0);
+	animation: sideSlide 5s forwards infinite;
+}
+
+@keyframes sideSlide {
+	6% {
+		transform: translate(20px, 0) scale(1);
+		color: #FFD93D;
+	}
+
+	8% {
+		transform: translate(20px, 0) scale(1);
+		color: #FFD93D;
+	}
+
+	9.9% {
+		transform: translate(0) scale(1.2);
+		color: #009DC5;
+	}
+
+	10% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+		color: #FFD93D;
+	}
+  100% {
+		transform: translate(0) scale(1);
+		opacity: 1;
+		color: #FFD93D;
+	}
+}
+
+
+.revolve-anim span {
+	color: #FFD93D;
+	opacity: 0;
+	transform: translate(0, -100px) rotate(360deg) scale(0);
+	animation: revolveDrop 3s forwards infinite;
+}
+
+
+@keyframes revolveDrop {
+	6% {
+		transform: translate(0, -50px) rotate(180deg) scale(1);
+	}
+
+	12% {
+		transform: translate(0, 20px) scale(.8) rotate(0deg);
+	}
+
+	20% {
+		transform: translate(0) scale(1) rotate(0deg);
+		opacity: 1;
+	}
+  40% {
+		transform: translate(0) scale(1) rotate(0deg);
+		opacity: 1;
+	}
+  60% {
+		transform: translate(0) scale(1) rotate(0deg);
+		opacity: 1;
+	}
+
+  80% {
+		transform: translate(0) scale(1) rotate(0deg);
+		opacity: 1;
+	}
+
+  100% {
+		transform: translate(0) scale(1) rotate(0deg);
+		opacity: 1;
+	}
+}
+
+.animate span:nth-of-type(2) {
+	animation-delay: .05s;
+}
+.animate span:nth-of-type(3) {
+	animation-delay: .1s;
+}
+.animate span:nth-of-type(4) {
+	animation-delay: .15s;
+}
+.animate span:nth-of-type(5) {
+	animation-delay: .2s;
+}
+.animate span:nth-of-type(6) {
+	animation-delay: .25s;
+}
+.animate span:nth-of-type(7) {
+	animation-delay: .3s;
+}
+.animate span:nth-of-type(8) {
+	animation-delay: .35s;
+}
+.animate span:nth-of-type(9) {
+	animation-delay: .4s;
+}
+.animate span:nth-of-type(10) {
+	animation-delay: .45s;
+}
+.animate span:nth-of-type(11) {
+	animation-delay: .5s;
+}
+.animate span:nth-of-type(12) {
+	animation-delay: .55s;
+}
+.animate span:nth-of-type(13) {
+	animation-delay: .6s;
+}
+.animate span:nth-of-type(14) {
+	animation-delay: .65s;
+}
+.animate span:nth-of-type(15) {
+	animation-delay: .7s;
+}
+.animate span:nth-of-type(16) {
+	animation-delay: .75s;
+}
+.animate span:nth-of-type(17) {
+	animation-delay: .8s;
+}
+.animate span:nth-of-type(18) {
+	animation-delay: .85s;
+}
+.animate span:nth-of-type(19) {
+	animation-delay: .9s;
+}
+.animate span:nth-of-type(20) {
+	animation-delay: .95s;
+}
+
+
+
+
+/* Tag Cloud  */
+
+.skill-cloud{
+  padding: 0;
+}
+
+.tagcloud {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFD93D;
+  }
+
+  .tagcloud--item:hover {
+    color: #FFFF00;
+      font-size: 22px;
+  }

@@ -23,7 +23,7 @@ for (var i = 0; i < pathEls.length; i++) {
 var myCloudRadius = 300;
 if(window.innerWidth<window.innerHeight)
 {
-  myCloudRadius = 200;
+  myCloudRadius = 100;
   document.querySelector("hr").setAttribute('style','font-size:2rem !important;');
 }
 

@@ -75,7 +75,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 /* Profile section */
 
 .profile {
-  padding: 10% 10% 5%;
+  padding: 10% 3% 0%;
 }
 .profile-img {
   width: 85%;
@@ -90,7 +90,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   padding: 10% 3% 5%;
 }
 
-.skill {
+.text-block {
   margin: 10% auto 10%;
 }
 
@@ -933,14 +933,13 @@ textarea.input100 {
 
 /* Tag Cloud  */
 
-.skill-cloud{
-  padding: 0;
-}
 
 .tagcloud {
     font-size: 20px;
     font-weight: bold;
     color: #FFD93D;
+    margin: 0 auto 0;
+      padding: 0;
   }
 
   .tagcloud--item:hover {

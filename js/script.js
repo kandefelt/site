@@ -60,6 +60,25 @@ var tagCloud = TagCloud('.skill-cloud', mySkills,{
 
 // ------------ Contact form validation
 
+let isRecaptchaValidated = false;
+
+function toggleRecaptchaFormMessage(type = "error", hide = false) {
+  document.getElementById(`recaptcha-form-${type}`).style.display = hide
+    ? "none"
+    : "inherit";
+}
+
+function onRecaptchaSuccess() {
+  isRecaptchaValidated = true;
+}
+
+function onRecaptchaError() {
+  toggleRecaptchaFormMessage("error");
+}
+
+function onRecaptchaResponseExpiry() {
+  onRecaptchaError();
+}
 
 
 (function ($) {
@@ -77,6 +96,10 @@ var tagCloud = TagCloud('.skill-cloud', mySkills,{
                 showValidate(input[i]);
                 check=false;
             }
+        }
+        if (!isRecaptchaValidated) {
+          toggleRecaptchaFormMessage("error");
+          return;
         }
 
         return check;

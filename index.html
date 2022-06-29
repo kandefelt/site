@@ -12,6 +12,8 @@
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"></script>
   <script src="https://kit.fontawesome.com/9246fc1a11.js" crossorigin="anonymous"></script>
+  <script src="https://www.google.com/recaptcha/api.js" async defer>
+</script>
 </head>
 
 <body>
@@ -238,7 +240,10 @@
           </div>
           <div
           class="g-recaptcha"
-          data-sitekey="6LfxwaQgAAAAAOf9gjZ_oP7dnxmQnQl2bwUNId1I">
+          data-sitekey="6LfxwaQgAAAAAOf9gjZ_oP7dnxmQnQl2bwUNId1I"
+          data-callback="onRecaptchaSuccess"
+          data-expired-callback="onRecaptchaResponseExpiry"
+          data-error-callback="onRecaptchaError">
         </div>
         <div id="recaptcha-form-error" style="display: inherit;" class="bg-red-200 rounded py-1 px-2 text-sm sm:text-md">
         Please fill the recaptcha checkbox.

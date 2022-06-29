@@ -238,27 +238,31 @@
             <textarea class="input100" name="message" placeholder="Your Message" spellcheck="false"></textarea>
             <span class="focus-input100"></span>
           </div>
-          <div
+          <!-- <div
           class="g-recaptcha"
           data-sitekey="6LfxwaQgAAAAAOf9gjZ_oP7dnxmQnQl2bwUNId1I"
           data-callback="onRecaptchaSuccess"
           data-expired-callback="onRecaptchaResponseExpiry"
           data-error-callback="onRecaptchaError">
-        </div>
-        <div id="recaptcha-form-error" style="display: inherit;" class="bg-red-200 rounded py-1 px-2 text-sm sm:text-md">
-        Please fill the recaptcha checkbox.
-      </div>
+        </div> -->
           <div style="display:none" class="thankyou-message">
             <h4>Thanks for contacting me! I will get back to you soon!
             </h4>
           </div>
           <div class="container-contact100-form-btn">
-            <button class="contact100-form-btn">
+            <button class="contact100-form-btn g-recaptcha"
+            data-sitekey="6LfxwaQgAAAAAOf9gjZ_oP7dnxmQnQl2bwUNId1I"
+            data-callback="onRecaptchaSuccess"
+            data-expired-callback="onRecaptchaResponseExpiry"
+            data-error-callback="onRecaptchaError">
               <span>
                 Send
               </span>
             </button>
           </div>
+          <div id="recaptcha-form-error" style="display: inherit;" class="bg-red-200 rounded py-1 px-2 text-sm sm:text-md">
+          Please fill the recaptcha checkbox.
+        </div>
         </form>
     </div>
 
